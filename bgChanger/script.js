@@ -7,26 +7,32 @@ btn.addEventListener("click" ,function(){
  
  
 })
-function ChangeColor(){
- bg.backGroundColor=SetColor
-
-
-}
 
 
 
 SetColor = function(){
 
  console.log("hiii")
- let hex = "1234567890ABCDEF"
+ let hex = "0123456789ABCDEF"
  let color = "#" ;
- for(var i=0; i<5; i++)
+ for(var i=0; i<6; i++)
  {
   color+=hex[Math.floor(Math.random()*16)]
  
  }
  return color;
  }
+
+
+ function ChangeColor(){
+  console.log(SetColor())
+
+  document.body.style.backgroundColor=SetColor();
+ 
+ 
+ 
+ }
+ 
 
 // console.log(bg)
 
