@@ -1,13 +1,22 @@
 
-let btn =  document.querySelector(".btn")
-let bg= document.getElementsByTagName("body")
-btn.addEventListener("click" ,function(){
+let startbtn =  document.querySelector(".start")
+let stoptbtn =  document.querySelector(".stop")
+
+
+startbtn.addEventListener("click" ,function(){
  console.log("HIII")
- setInterval(ChangeColor,1000)
+ var clearbgColor= setInterval(ChangeColor,1000)
  
  
 })
 
+
+stopbtn.addEventListener("click" ,function(){
+ console.log("HIII")
+ clearInterval(clearbgColor)
+ 
+ 
+})
 
 
 SetColor = function(){
